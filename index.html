@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Editor</title>
+    <link rel="stylesheet" href="./style.css">
+   
+</head>
+<body>
+
+<div id="editorContainer">
+    <!-- Controls Section -->
+    <div id="controls">
+        <div class="control">
+            <label for="textInput">Text:</label>
+            <input type="text" id="textInput" value=" Welcome ">
+        </div>
+
+        <div class="control">
+            <label for="fontSize">Font-Size:</label>
+            <input type="range" id="fontSize" min="10" max="50" value="20">
+        </div>
+
+        <div class="control">
+            <label for="fontFamily">Font-Family:</label>
+            <select id="fontFamily">
+                <option value="monospace">Monospace</option>
+                <option value="Arial">Arial</option>
+                <option value="Helvetica">Helvetica</option>
+            </select>
+        </div>
+
+        <div class="control">
+            <label for="fontColor">Font-Color:</label>
+            <input type="text" id="fontColor" value="orange">
+        </div>
+
+        <div class="control">
+            <label for="position">Position:</label>
+            <select id="position">
+                <option value="relative">Relative</option>
+                <option value="absolute">Absolute</option>
+            </select>
+        </div>
+
+        <div class="control">
+            <label for="height">Height:</label>
+            <input type="number" id="height" value="369">
+        </div>
+
+        <div class="control">
+            <label for="width">Width:</label>
+            <input type="number" id="width" value="400">
+        </div>
+
+        <div class="control">
+            <label for="brightness">Brightness:</label>
+            <input type="range" id="brightness" min="0" max="2" step="0.1" value="1">
+        </div>
+
+        <div class="control">
+            <label for="invert">Invert:</label>
+            <input type="range" id="invert" min="0" max="1" step="0.1" value="0">
+        </div>
+
+        <div class="control">
+            <label for="grayscale">Grayscale:</label>
+            <input type="range" id="grayscale" min="0" max="1" step="0.1" value="0">
+        </div>
+
+        <div class="control">
+            <label for="saturate">Saturate:</label>
+            <input type="range" id="saturate" min="0" max="2" step="0.1" value="1">
+        </div>
+
+        <div class="control">
+            <label for="borderRadius">Border Radius:</label>
+            <input type="range" id="borderRadius" min="0" max="100" value="0">
+        </div>
+    </div>
+
+    <!-- Image Display Section -->
+    <div id="imageContainer">
+        <img id="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROK_CZ__OOzAx-ULlJKDaUoyMenSmR2hpDFA&s" alt="img">
+
+        <div id="displayText" style="color: orange; font-size: 20px; font-family: monospace;">Welcome </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
